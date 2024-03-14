@@ -4,7 +4,7 @@ body, html {
     height: 100%;
     font-family: Arial, sans-serif;
 }
-
+/* header */
 .container {
     background-color: #000;
     position: relative;
@@ -82,6 +82,9 @@ body, html {
     margin-top: 20px;
     color: #578f52;
 }
+
+/* about */
+
 .about{
     text-align: center;
     padding-top: 50px; /* Adjust for fixed top bar */
@@ -96,6 +99,65 @@ body, html {
     position: relative;
 
 }
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 30px;
+    color: white;
+    padding: 0 20px 30px;
+}
+ .s{
+    font-size: 16px;
+    line-height: 1.6;
+    color: black; 
+ }
+
+/* project */
+
+.projects {
+    text-align: center;
+    padding-top: 50px; /* Adjust for fixed top bar */
+    background-color: #000;
+    height: 100vh;
+    padding: 15% 0 15% 0;
+}
+
+.projects h2 {
+    font-size: 24px;
+    color:#578f52;
+
+    margin-bottom: 20px;
+}
+
+.projects p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects li {
+    margin-bottom: 10px;
+}
+
+.projects a {
+    color: #8daa6c;
+    text-decoration: none;
+}
+
+.projects a:hover {
+    text-decoration: underline;
+}
+/* contact */
 .contact::after, .contact::before{
     content: "";
     display: table;
@@ -104,22 +166,16 @@ body, html {
 
 }
 .contact{
-    padding-top: 32px !important;
+    padding-top: 100px !important;
     padding-bottom: 32px !important;
     font-size: large;
     justify-content: space-between;
-    text-align: justify;
+    text-align: center;
     color: black;
     background-color: #578f52;
     padding: 15% 0 15% 0;
 }
-.dd{
-    border-bottom: 1px solid #ccc;
-    border-color: #f1f1f1;
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-.f{
+/* .f{
     padding: 8px;
     display: block;
     border: none;
@@ -153,21 +209,67 @@ body, html {
     text-align: center;
     cursor: pointer;
     white-space: nowrap
- }
- h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
+ } */
+
+ form {
+    text-align: center; /* Center-align the form */
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: white;
+.f,
+.ff,
+.fff {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid transparent; /* Make borders invisible */
+    width: 50%;
+    margin: 0 auto; /* Center the form fields */
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
- .s{
-    font-size: 16px;
-    line-height: 1.6;
-    color: black; 
- }
 
+.fff {
+    color: #fff !important;
+    background-color: #000 !important;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+ .contact input[type="text"],
+ .contact button {
+     margin: 0 auto; /* Centers the input fields and button */
+     display: block;
+     padding: 8px;
+     border: none;
+     border-bottom: 1px solid #ccc;
+     width: 50%;
+     border: 1px solid #ccc;
+ }
+ 
+ .contact button {
+     margin-top: 16px;
+     margin-bottom: 16px;
+     color: #fff;
+     background-color: #000;
+     border: none;
+     display: inline-block;
+     padding: 8px 16px;
+     vertical-align: middle;
+     overflow: hidden;
+     text-decoration: none;
+     color: inherit;
+     background-color: inherit;
+     text-align: center;
+     cursor: pointer;
+     white-space: nowrap;
+ }
